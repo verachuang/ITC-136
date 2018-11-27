@@ -12,7 +12,7 @@ if find $path2check -name $num3 -print -quit | grep -q '^'; then
   echo
   ## use 2> /dev/null to get rid of pesky stderr
   ## Permission denied...
-  find $pasth2check 2> /dev/null | grrp "\/$num3$" | less
+  find $path2check 2>/dev/null | grep "\/$num3$" | less
 
 else
   echo "The file does not exist!"

@@ -1,0 +1,2 @@
+if find $path2check -name $num3 -print -quit | grep -q '^'; then
+  find $path2check 2>/dev/null | grep "\/$num3$" | less
